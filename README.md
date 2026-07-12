@@ -4,7 +4,7 @@
 
 ### Useful Links
 * **[Read the Paper](LINK_TO_PAPER)**
-* **[Download the Dataset](LINK_TO_DOWNLOAD)**
+* **[Download the Dataset](https://github.com/KNSyNAPS-org/walkscapes-dataset-data)**
 
 ---
 
@@ -304,7 +304,7 @@ In addition to the primary CC license, the use of this dataset is strictly gover
 * **Privacy and Ethics:** Strict prohibition against re-identification, surveillance, tracking, or profiling of individuals.
 * **Redistribution:** Rules on how to share modified or unmodified data.
 
-Please read the full **[Terms of Use](TERMS_OF_USE.md)** and the **[LICENSE](LICENSE)** file carefully before downloading or using the data.
+Please read the full **[Terms of Use](TERMS_OF_USE.md)**, **[Ethical Use Guidelines](ETHICAL_USE_GUIDELINES.md)** and the **[LICENSE](LICENSE)** file carefully before downloading or using the data.
 
 ## Citation
 
