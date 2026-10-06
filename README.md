@@ -3,7 +3,7 @@
 **A pedestrain perspective urban dataset from multiple cities across Poland desgined for semantic segmentation**
 
 ### Useful Links
-* **[Read the Paper](LINK_TO_PAPER)**
+* **[Read the Paper](https://doi.org/10.3390/app16199781)**
 * **[Download the Dataset](https://github.com/KNSyNAPS-org/walkscapes-dataset-data)**
 
 ---
@@ -20,11 +20,11 @@ For these reasons, we argue that there is a need for at least a medium-sized, se
 
 ## Dataset Characteristics
 
-Our dataset consists of 1,507 manually segmented images containing 14 classes representing various important elements of street enviroment. Images were taken across ten different cities in Poland, with most captured in Warsaw. Images were collected between July 2024 and Feburary 2025 so dataset represents few different seasons. Capturing occured during varying times of the day to diversify illumination and improve generalisation.
+Our dataset consists of 1,503 manually segmented images containing 14 classes representing various important elements of street enviroment. Images were taken across ten different cities in Poland, with most captured in Warsaw. Images were collected between July 2024 and Feburary 2025 so dataset represents few different seasons. Capturing occured during varying times of the day to diversify illumination and improve generalisation.
 
 There were not many images showing severe weather phenomena. Some of the images were taken in series and, despite discarding identical photos, a considerable portion still exhibits similarities. This should be taken into account when designing a custom dataset split.
 
-For that reason we reccommend using split proposed by us containing test split (70% - 1057 images), validation split (15% - 226 images) and test split (15% - 224 images).
+For that reason we reccommend using split proposed by us containing test split (70% - 1057 images), validation split (15% - 224 images) and test split (15% - 222 images).
 
 All photos were captured using smartphone cameras. Because the devices were not standardized, the dataset spans a wide range of native resolutions, ranging from $864\times1920$ to $3213\times5712$ pixels. However, over 80\% of photos taken feature 5 resolutions ($2592\times4608$, $1536\times2048$, $3072\times4096$, $864\times1920$ and $1080\times1920$ pixels). Only data formats that were used comprise JPEG and PNG.
 
@@ -309,3 +309,18 @@ Please read the full **[Terms of Use](TERMS_OF_USE.md)**, **[Ethical Use Guideli
 ## Citation
 
 If you use this dataset in your research, please cite our paper:
+```bibtex
+@Article{app16199781,
+AUTHOR = {Chabros, Kacper and Jastrzębski, Tomasz and Oleś, Patryk and Horodecki, Stanisław and Piotrowiak, Igor and Wróblewski, Paweł and Kacperska, Marta and Frączek, Mikołaj and Sarwas, Grzegorz},
+TITLE = {WalkScapes: A Pedestrian-View Urban Semantic Segmentation Dataset for Public-Space Monitoring and Autonomous Mobility},
+JOURNAL = {Applied Sciences},
+VOLUME = {16},
+YEAR = {2026},
+NUMBER = {19},
+ARTICLE-NUMBER = {9781},
+URL = {https://www.mdpi.com/2076-3417/16/19/9781},
+ISSN = {2076-3417},
+ABSTRACT = {Pedestrian-level semantic segmentation supports autonomous mobility, assistive navigation, and safety-oriented perception in public spaces. However, widely used urban segmentation datasets predominantly adopt vehicle-centered viewpoints that differ from those in pedestrian environments in scene geometry, object scale, and class distribution. This paper introduces WalkScapes, a real-world pedestrian-view dataset comprising 1503 images collected across ten Polish cities and annotated into 14 semantic classes. We describe its SAM-assisted annotation procedure, class taxonomy, and spatial characteristics and assess annotation consistency by re-annotating 50 images. We establish a benchmark by evaluating 13 semantic segmentation models on 12 classes, with the two sparsest categories excluded from supervised evaluation. The highest-performing model achieves 0.766 mIoU and 0.917 pixel accuracy. To investigate cross-dataset generalization, we evaluate Cityscapes-pretrained and WalkScapes-fine-tuned models in both domains using five semantically aligned classes. The results reveal substantial performance degradation outside the training domain, indicating that differences in label taxonomies alone cannot explain the observed transfer gap. An additional experiment involving two architectures shows that anonymizing faces and license plates in test images yields only small changes in segmentation performance under the conditions evaluated. WalkScapes provides a domain-specific benchmark for pedestrian-view scene understanding and supports research on perception components for autonomous mobility and public-space monitoring.},
+DOI = {10.3390/app16199781}
+```
+}
